@@ -20,7 +20,7 @@ module HelloRailsBackEnd
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'http://localhost:3000' # Add other origins if needed
+        origins '*' # Add other origins if needed
         resource '*',
           headers: :any,
           methods: [:get, :post, :put, :patch, :delete, :options, :head],
